@@ -13,7 +13,7 @@ services:
     build:
       context: ${DOCKER_ETC}
       dockerfile: ${DOCKER_PHP}
-    image: php-teste
+    image: php-mysql
     container_name: php
     volumes:
       - ${APP_DIR}:/var/www/html
@@ -33,7 +33,7 @@ services:
       dockerfile: ${DOCKER_CONSOLE}
       args:
         APP_USER: ${APP_USER}
-    image: console-teste
+    image: console
     container_name: console
     volumes:
       - ${APP_DIR}:/code
