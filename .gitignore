@@ -2,3 +2,5 @@ data/
 docker.sublime*
 code/
 .home/
+.vscode/
+.DS_Store
