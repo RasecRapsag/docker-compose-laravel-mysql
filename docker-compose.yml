@@ -33,7 +33,7 @@ services:
       dockerfile: ${DOCKER_CONSOLE}
       args:
         APP_USER: ${APP_USER}
-    image: console
+    image: console-mysql
     container_name: console
     volumes:
       - ${APP_DIR}:/code
